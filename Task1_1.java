@@ -143,6 +143,15 @@ public class Task1_1 {
         }
     }
 }
+//Regarding the return type of DoubleStream.max and DoubleStream.min methods. It's OptionalDouble (instead of just double) because the stream might be empty, in which case there would be neither a max or a min value. In this case, the returned OptionalDouble instance would be empty. 
+//Casting is not magic. If you have a DoubleStream instance, you can't just cast that instance to Supplier<DoubleStream> and expect the cast to magically transform the stream to a supplier. 
+//Despite all this, it's not clear at all why you need to get a supplier from the stream in the first place. 
+//-------------------------------------------
+//Casting not is magic 
+//DoubleStream instance instance DoubleStream Supplier have just expect cast that you cast you can and magically the transform If the to stream to to a t a supplier 
+//Despite clear this need all not all why supplier you from get the it stream at to in the s first a place 
+//DoubleStream Regarding return type the max DoubleStream and min of methods 
+//OptionalDouble instead because double stream might empty which there would just case the neither It of be max in be or s a min a value 
 //returned OptionalDouble this instance case would the In be empty 
 //-------------------------------------------
 //magic Casting is not 
@@ -151,4 +160,5 @@ public class Task1_1 {
 //DoubleStream DoubleStream max min methods and of Regarding return the type 
 //empty might max min stream a a because be be case double It instead in just neither OptionalDouble of or s the there value which would 
 //empty be case In instance OptionalDouble returned this the would 
+//
 
